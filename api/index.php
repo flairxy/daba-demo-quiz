@@ -23,5 +23,5 @@ if ($uri[1] !== 'quiz') {
 $requestMethod = $_SERVER["REQUEST_METHOD"];
 
 // pass the request method and post ID to the Post and process the HTTP request:
-$controller = new Quiz($dbConnection, $requestMethod);
+$controller = new Quiz($requestMethod);
 $controller->processRequest();
